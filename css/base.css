@@ -1,0 +1,285 @@
+/* 
+    Created on : Jun 10, 2015, 10:27:26 AM
+    Author     : Josh Dyke
+*/
+@import url('reset.css');
+/*------------------------   standard elements  ----------------------------- */
+body{
+    margin: 0 5% 0 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;    
+
+}
+body#index{
+    background-image: url("../bin/earth_recycle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+figcaption {
+    color: #839e99;
+    font-style: italic;
+    text-align: center;
+}
+
+header{
+    overflow: auto; /* forces header to fit to figure */
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+header .float_left{
+    margin-top: 0;
+}
+
+header h1{
+    padding-bottom: 2em;
+    padding-top: 75px;
+}
+
+img{
+    max-width: 100%; /* image strinks to fit containor but does not stretch */
+}
+
+section.bikeClass{
+    padding: 2em;
+    width: 40%;
+    display: block;
+    float: left;
+    height: 20em;   
+}
+
+body#add section#existingBikes.float_left{
+    margin-bottom: 1em;
+    clear: both;
+}
+
+/*------------------------   classes           ------------------------------ */
+.float_left {
+    border: thin solid darkslategray;
+
+
+    padding: 0.5em;
+}
+
+.even{
+    background-color: whitesmoke;
+}
+
+.odd{
+    background-color: lightcyan;
+}
+
+.small {
+    width: 150px;
+}
+
+/*------------------------   nav section only  ------------------------------ */
+nav ol li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: .5em;
+    padding-left: .5em;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: solid 1px #64F564;
+}
+
+nav ol li:hover{
+    background-color: #60EBEB;
+    border: solid #103B10 1px;
+    border-radius: 2em;
+    margin-top: -1px;
+    margin-bottom: -1px;    
+}
+
+nav{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-bottom: solid white 1px;
+    border-top-right-radius: 5em;
+    border-top-left-radius: 5em;
+    background-color: #64F564;
+    float: right;
+}
+
+nav ol li a{
+    text-decoration: none;
+    
+}
+
+/*------------------------   add page form  only  ------------------------------ */
+body#add article > h2{
+    display: none;
+}
+article#main{
+    clear: both;
+}
+
+fieldset.contact{
+    border: solid 1px;
+}
+fieldset.contact > legend{
+    font-weight: bold;
+    border: double;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+}    
+fieldset.wrapper{
+    border: solid 1px;
+}
+
+fieldset.wrapper > legend{
+    font-weight: bold;
+    border: double;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+input#txtDescription{
+    width: 50%;
+    height: 2em;    
+}
+
+fieldset.contact > label.required {
+    clear: left;
+    display: inline-block;
+    /* float: left; */
+    margin-bottom: 3px;
+    text-align: right;
+    width: 50%;
+}
+fieldset.radio > legend{
+    padding-top: 2em;
+}
+
+label#labelCondition{
+    padding-left: 7em;
+}
+/*------------------------   table page  only  ------------------------------ */
+#table aside{
+    height: 600px; 
+    float: left; 
+    overflow: auto; 
+    margin-left: 2em;            
+}
+#table section{
+    width: 35%; 
+    height: 600px; 
+    float: left; 
+    overflow: auto;
+}
+#table table{
+    border: medium #000080 solid;
+    border-collapse: collapse;
+}
+
+#table td {
+    border: thin #000080 solid;
+    border-collapse: collapse;
+    
+}
+
+#table th{
+    text-align: left;
+}
+td{
+    text-align: center;
+}
+th{
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+
+
+/*------------------------   browse section only  ------------------------------ */
+body#browse h3{
+    display: none;
+}
+
+article.browseClass{
+    border: solid 1px;
+    clear: both;
+    height: 34em;
+    overflow: scroll;    
+}
+
+section.bikeClass img{
+    height: auto;
+    width: 20em;
+}
+
+body#browse section.bikeClass a{
+    text-decoration: none;
+}
+
+body#browse section.bikeClass a:hover{
+    border: solid 1px;
+    background-color: red;
+    color: white;
+    border-radius: 3em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*------------------------   footer section only  ------------------------------ */
+footer.foot{
+    border-bottom: solid 1px;
+    border-bottom-left-radius: 3em;
+    padding-left: 10px;
+    margin-bottom: 1em;
+    padding-top: 5px;
+    width: auto;
+    position: fixed;
+    bottom: 5px;   
+}
+
+/*------------------------   home section only  ------------------------------ */
+body#index article{
+    border: solid 1px;
+    clear: both;
+    height: 37em;    
+}
+
+div#home{
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    margin-top: 18em;
+    background-color: white;
+    padding-right: 5px;
+    padding-left: 20px;
+    border-radius: 1em;
+    border: solid 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*------------------------   update section only  ------------------------------ */
+body#update article h2{
+    display: none;  
+}
+
+/*------------------------   delete section only  ------------------------------ */
+body#delete article h2{
+    display: none;
+}
+
+body#delete article{
+    clear: both;
+}
+
+/*------------------------   update section only  ------------------------------ */
+body#update article h2{
+    display: none;
+}
+
+body#update article{
+    clear: both;
+}
