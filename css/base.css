@@ -228,6 +228,39 @@ body#browse section.bikeClass a:hover{
     padding-right: 5px;
 }
 
+#viewSection {
+    border: 1px solid black;
+    margin: 2em; 
+    padding: 1em;
+    min-width: 50em;
+    min-height: 20em;
+    border-radius: 1em;
+    max-width: 40em;
+}
+
+#viewImage {
+    float: left;
+    padding: 1em;
+    margin: 1em;
+}
+
+#viewBikeInfo {
+    float: left;
+    border: 1px solid black;
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+}
+
+#viewDonor {
+    float: left;
+    border: 1px solid black;
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+}
+
+
 /*------------------------   footer section only  ------------------------------ */
 footer.foot{
     border-bottom: solid 1px;
