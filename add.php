@@ -569,6 +569,14 @@ print '</select></label>';
                value="29" 
                tabindex="201"
                <?php if($tireSize == "29") echo ' checked="checked" ';?>>29"</label>
+    
+    <label for="radOther">
+        <input type="radio" 
+               id="radTireSizeOther" 
+               name="radTireSize" 
+               value="Other" 
+               tabindex="202"
+               <?php if($tireSize == "Other") echo ' checked="checked" ';?>>Other</label>
                         
 <label for="lstCondition" id="labelCondition">Condition
 <select id="lstCondition"
