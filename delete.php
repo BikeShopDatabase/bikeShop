@@ -61,7 +61,7 @@ if (isset($_GET["id"])){
     $data = array($serialNumber);
     
     $results = $thisDatabaseWriter->delete($query, $data);
-    
+    unlink($serialNumber . ".jpg");
     foreach($bikes1 as $bike1){
         if($bike1["pmkSerialNumber"] == $serialNumber){
         print '<h1>' . $bike1["fldMake"] . $bike1["fldModel"] . ' removed from database</h1>';
