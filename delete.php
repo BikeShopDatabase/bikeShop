@@ -56,12 +56,13 @@ $bikes1 = $thisDatabaseReader->select($query1, "", 1, 0 ,2 ,0 ,false, false);
 
 if (isset($_GET["id"])){
     $serialNumber = (string) htmlentities($_GET["id"], ENT_QUOTES, "UTF-8");
+    $deleteFile = $serialNumber . ".jpg";
     $query = 'DELETE FROM tblBike ';
     $query .= 'WHERE pmkSerialNumber = ? ';
     $data = array($serialNumber);
     
     $results = $thisDatabaseWriter->delete($query, $data);
-    unlink($serialNumber . ".jpg");
+    unlink("images/" . $deleteFile);
     foreach($bikes1 as $bike1){
         if($bike1["pmkSerialNumber"] == $serialNumber){
         print '<h1>' . $bike1["fldMake"] . $bike1["fldModel"] . ' removed from database</h1>';
