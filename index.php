@@ -19,8 +19,9 @@ if (isset($_GET['getRecordsFor'])) {
 // Begin output
 print '<article>';
 print '<div id="home">';
-    print '<p>Welcome to J&B Bikes.  Register today and connect with other bike owners looking to donate their old bikes.</p>';
-    print "<p>It's quick, easy, and best of all totally free.</p>";
+    print '<p>Welcome to J&B Bikes.  Register today and connect with other bike owners looking to donate their old bikes.  ';
+    print "It's quick, easy, and best of all totally free.</p>";
+
 print '</div>';
 
 print '</article>';
