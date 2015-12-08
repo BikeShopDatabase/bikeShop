@@ -250,6 +250,7 @@ body#browse section.bikeClass a:hover{
     margin: 1em;
     padding: 1em;
     background-color: white;
+    max-width: 20em;
 }
 
 #viewDonor {
@@ -260,7 +261,11 @@ body#browse section.bikeClass a:hover{
     background-color: white;
 }
 
-
+.browseImage {
+    height: auto;
+    width: 20em;
+    border: 1px solid black;
+}
 /*------------------------   footer section only  ------------------------------ */
 footer.foot{
     border-bottom: solid 1px;

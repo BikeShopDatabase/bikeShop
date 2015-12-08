@@ -585,7 +585,7 @@ print '</select></label>';
                         <label for="txtDescription" class="required">Description
                             <input type="text" id="txtDescription" name="txtDescription"
                                    value="<?php print $description; ?>"
-                                   tabindex="300" maxlength="45" placeholder="Enter brief description"
+                                   tabindex="300" maxlength="160" placeholder="Enter brief description"
                                    <?php if ($descriptionERROR) print 'class="mistake"'; ?>
                                    onfocus="this.select()"
                                    >
