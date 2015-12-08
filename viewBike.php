@@ -39,6 +39,37 @@
     
     $mailed = false;
     
+    ?> 
+    <h2>Bike Number: <?php print $bikeNumber ?></h2>
+        <section id="viewSection">
+            <section id="viewImage">
+                <img src="images/<?php print $bikeNumber ?>.jpg" class="browseImage">
+            </section>
+            <section id="viewBikeInfo">
+                <h3>Bike Information:</h3>
+                <?php
+                    foreach($bikeInfo as $bike){
+                        print"<p>Make: " . $bike['fldMake'] . "</p>";
+                        print"<p>Model: " . $bike['fldModel'] . "</p>";
+                        print"<p>Type: " . $bike['fldType'] . "</p>";
+                        print"<p>Tire Size: " . $bike['fldTireSize'] . '"' . "</p>";
+                        print"<p>Description: " . $bike['fldDescription'] . "</p>";
+                    }
+                ?>
+            </section>
+            <section id="viewDonor">
+                <h3>Contact Information:</h3>
+                <?php
+                    foreach($donorInfo as $donor){
+                        print"<p>" . $donor['fldFirstName'] . " " . $donor['fldLastName'] . "</p>";
+                        print"<p>" . $donor['fldEmail'] . "</p>";
+                        print"<p>" . $donor['fldPhone'] . "</p>";
+                    }
+                ?>
+            </section>
+        </section>
+
+    <?php
     if (isset($_POST["btnSubmit"])) {
     
         if (!securityCheck($path_parts, $yourURL, true)) {
